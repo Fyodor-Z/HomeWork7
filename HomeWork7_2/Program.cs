@@ -21,7 +21,9 @@ namespace HomeWork7_2
 
             Console.WriteLine("Given list: " + string.Join(", ", inputList));
 
-            foreach (var item in inputList) 
+            var uniqueList = inputList.Distinct().ToList(); //make a new list to avoid repeating of elements
+
+            foreach (var item in uniqueList) 
             {
                 Console.WriteLine($"Element:  {item} frequency: {inputList.Where(i => i== item).Count()}");
             }
