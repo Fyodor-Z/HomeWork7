@@ -14,7 +14,7 @@ namespace HomeWork7_1
 
         {
             var inputList = new List<int>();
-            
+                       
 
             var rndm = new Random();
             for (int i = 0; i < (rndm.Next(6)+5); i++) //number of list elements from 5 to 10
